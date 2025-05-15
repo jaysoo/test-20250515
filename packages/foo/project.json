@@ -1,0 +1,29 @@
+{
+  "targets": {
+    "greet": {
+      "command": "echo hello"
+    },
+    "serve": {
+      "command": "node server.cjs"
+    },
+    "serve2": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "nx run foo:greet",
+          "nx run foo:serve"
+        ]
+      }
+    },
+    "serve3": {
+      "executor": "nx:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": [
+          "nx run foo:greet",
+          "nx run foo:serve"
+        ]
+      }
+    }
+  }
+}
