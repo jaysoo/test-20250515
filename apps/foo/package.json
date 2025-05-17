@@ -1,5 +1,5 @@
 {
-  "name": "@org2/foo",
+  "name": "@acme/foo",
   "version": "0.0.1",
   "private": true,
   "type": "module",

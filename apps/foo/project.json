@@ -3,7 +3,12 @@
     "greet": {
       "command": "echo hello"
     },
+    "serve4": {
+      "command": "node server.cjs 4000",
+      "dependsOn": ["serve"]
+    },
     "serve": {
+      "continuous": true,
       "command": "node server.cjs"
     },
     "serve2": {
